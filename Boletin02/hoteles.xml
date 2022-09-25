@@ -1,8 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Completar este documento para registrar hoteles,
-    donde tengas nombre, teléfono, dirección(calle y número),
-    ciudad, país, numero de estrellas, descripción del hotel,
-    número habitaciones individuales, habitaciones dobles,
-    habitaciones triples, suites.
-    Probar si es un documento bien formado.
--->
+
+<!DOCTYPE hoteles [
+    <!ELEMENT hoteles (hotel+)>
+    <!ELEMENT hotel (nombre,teléfono,dirección,ciudad,país,estrellas,descripción,habitaciones)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT teléfono (#PCDATA)>
+    <!ELEMENT dirección (calle,número)>
+    <!ELEMENT calle (#PCDATA)>
+    <!ELEMENT número (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT país (#PCDATA)>
+    <!ELEMENT estrellas (#PCDATA)>
+    <!ELEMENT descripción (#PCDATA)>
+    <!ELEMENT habitaciones (individuales,dobles,triples,suites)>
+    <!ELEMENT individuales (#PCDATA)>
+    <!ELEMENT dobles (#PCDATA)>
+    <!ELEMENT triples (#PCDATA)>
+    <!ELEMENT suites (#PCDATA)>
+]>
+<hoteles>
+    <hotel>
+        <nombre></nombre>
+        <teléfono></teléfono>
+        <dirección>
+            <calle></calle>
+            <número></número>
+        </dirección>
+        <ciudad></ciudad>
+        <país></país>
+        <estrellas></estrellas>
+        <descripción></descripción>
+        <habitaciones>
+            <individuales></individuales>
+            <dobles></dobles>
+            <triples></triples>
+            <suites></suites>
+        </habitaciones>
+    </hotel>
+</hoteles>
