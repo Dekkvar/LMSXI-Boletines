@@ -4,5 +4,6 @@
     <!ELEMENT flor (#PCDATA)>
     ]>
 
-    <flores>
-    </flores>
+<flores>
+    <flor>Rosa</flor>
+</flores>
